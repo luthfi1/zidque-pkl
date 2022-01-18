@@ -1,0 +1,50 @@
+.login{
+    .bg-login{
+        @media only screen and (max-width: $lg) {
+            display: none;
+        }         
+    }
+    .ps-5{
+        @media only screen and (max-width: $lg) {
+            padding-left: 0px !important;
+        }
+    }
+    .reload{
+        margin-top: 40px;
+        @media only screen and (max-width: $lg) {
+            margin-top: 0px;
+        }
+    }
+}
+.register{
+    .alert-register{
+        background-color: #F0F2F4;
+        border-radius: 8px;
+    }
+    .step{
+        margin-top: 8px;
+        .indicator{
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            margin-right: 8px ;
+            background-color: none ;
+            border: 1px solid #B9B9C3;
+        }
+        .active{
+            @extend .bg-primary ;
+            border: 0px !important;
+        }
+        hr{
+            margin: 0px 8px 0px 0px !important;
+            height: 3px !important;
+            width: 40px !important;
+            background-color: #B9B9C4 !important ;
+        }
+    }
+}
+.auth-logo{
+    width: 141px;
+    height: 41px;
+}
+

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+// base
+@import './base/variable' ;
+
+// components
+@import './components/fonts' ;
+@import './components/colors' ;
+@import './components/shadows' ;
+@import './components/carousel';
+@import './components/form';
+@import './components/alert';
+
+
+// layouts
+@import './layouts/header';
+
+// pages
+@import './pages/home';
+@import './pages/login';
+
+body,a{
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    color: #263238;
+}
+section{
+    padding-top: 74px;
+}
+.title{
+    @extend .text-bold-2xl ;
+    margin-bottom: 5px;
+}
+hr{
+    width: 315px;
+    height: 1px;
+    background: #757575;
+}
+a{
+    color: #263238;
+    text-decoration: none;
+    &:hover{
+        color: #263238;
+    }
+}
+.text-pointer{
+    cursor: pointer;
+}
+
+.btn-primary{
+    &:disabled{
+        background-color: #E0E0E0 !important;
+        color: #9E9E9E !important;
+    }
+}

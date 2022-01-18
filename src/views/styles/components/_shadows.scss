@@ -1,0 +1,11 @@
+$shadow : 
+    "2dp" (0px 2px 2px rgba(66, 66, 66, 0.2), 0px 0px 4px rgba(66, 66, 66, 0.2)) , 
+    "4dp" (0px 6px 10px rgba(66, 66, 66, 0.2), 0px 0px 4px rgba(66, 66, 66, 0.2)) , 
+    "6dp" (0px 4px 4px rgba(0, 0, 0, 0.25), 0px 9px 12px rgba(66, 66, 66, 0.2), 0px 0px 4px rgba(66, 66, 66, 0.2)) , 
+    "12dp" (0px 12px 15px rgba(66, 66, 66, 0.2), 0px 0px 4px rgba(66, 66, 66, 0.2)) ;
+
+@each $name, $value in $shadow {
+    .shadow-#{$name} {
+        box-shadow: $value !important;
+    }
+}

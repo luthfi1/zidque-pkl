@@ -1,0 +1,39 @@
+@mixin text-regular{
+    font-style: normal !important;
+    font-weight: 400 !important;
+}
+@mixin text-medium{
+    font-style: normal !important;
+    font-weight: 500 !important;
+}
+@mixin text-bold{
+    font-style: normal !important;
+    font-weight: bold !important;
+}
+$typography: 
+    "2xs" auto 10px , 
+    "xs" auto 12px , 
+    "sm" 140% 14px , 
+    "base" 140% 16px , 
+    "lg" 140% 20px , 
+    "xl" 120% 24px , 
+    "2xl" 120% 32px , 
+    "3xl" 110% 40px ;
+
+@each $name, $line-height, $size in $typography {
+    .text-regular-#{$name} {
+        @include text-regular ;
+        font-size: $size !important;
+        line-height: $line-height !important;
+    }
+    .text-medium-#{$name} {
+        @include text-medium ;
+        font-size: $size !important;
+        line-height: $line-height !important;
+    }
+    .text-bold-#{$name} {
+        @include text-bold ;
+        font-size: $size !important;
+        line-height: $line-height !important;
+    }
+}

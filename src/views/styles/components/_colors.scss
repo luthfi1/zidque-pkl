@@ -1,0 +1,51 @@
+$color: 
+    "gray-10" #FFFFFF , 
+    "gray-20" #F5F5F5 , 
+    "gray-30" #EDEDED , 
+    "gray-40" #E0E0E0 , 
+    "gray-50" #C2C2C2 , 
+    "gray-60" #9E9E9E , 
+    "gray-70" #757575 , 
+    "gray-80" #616161 , 
+    "gray-90" #404040 , 
+    "gray-100" #0A0A0A , 
+    "primary-color-blue-10" #FFFFFF , 
+    "primary-color-blue-20" #F7FBFD , 
+    "primary-color-blue-30" #F1F8FB , 
+    "primary-color-blue-40" #E7F3F9 , 
+    "primary-color-blue-50" #CEE7F3 , 
+    "primary-color-blue-60" #B2D8EC , 
+    "primary-color-blue-70" #91C8E4 , 
+    "primary-color-blue-80" #81C0DF , 
+    "primary-color-blue-90" #66B2D9 , 
+    "primary" #3B9DCE , 
+    "primary-color-blue-110" #23739B , 
+    "primary-color-positive" #61D774 , 
+    "primary-color-critical" #FF8819 , 
+    "primary-color-negative" #F63A3A , 
+    "primary-color-informative-grey" #778CA3 , 
+    "primary-color-informative-black" #143D52 , 
+    "primary-color-informative-white" #EAF5FA ;
+
+@each $name, $value in $color {
+    .text-#{$name} {
+        color: $value !important;
+    }
+    .bg-#{$name} {
+        background-color : $value !important;
+    }
+    .btn-#{$name} {
+        border: 0px solid $value;
+        background-color : $value !important;
+
+    }
+    .btn-outline-#{$name} {
+        border: 1px solid $value !important;
+        color: $value !important;
+        &:hover{
+            background-color: white !important;
+        }
+    }
+
+}
+

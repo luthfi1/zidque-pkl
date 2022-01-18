@@ -1,0 +1,12 @@
+.navbar{
+    @extend .bg-gray-10;
+    .nav-link{
+        @extend .text-regular-base ;
+        @extend .text-gray-90 ;
+        margin-right: 32px
+    }
+    .active{
+        @extend .text-bold-base ;
+        @extend .text-primary ;
+    }
+}
